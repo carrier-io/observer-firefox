@@ -1,6 +1,6 @@
-ARG VERSION
+ARG BASE_IMAGE
 
-FROM selenoid/vnc:$VERSION
+FROM $BASE_IMAGE
 
 USER root
 
