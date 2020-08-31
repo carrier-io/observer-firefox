@@ -6,6 +6,7 @@ ENV SCREEN_HEIGHT 1080
 USER root
 
 RUN apt-get update && apt-get upgrade -y python3 && apt-get install -y  software-properties-common python3-pip
+
 RUN add-apt-repository -y ppa:jonathonf/ffmpeg-4
 RUN apt -y install ffmpeg git && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
