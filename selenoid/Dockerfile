@@ -1,6 +1,6 @@
 ARG VERSION
 
-FROM selenoid/vnc:$VERSION
+FROM selenoid/vnc:firefox_$VERSION
 
 USER root
 
